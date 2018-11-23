@@ -20,7 +20,7 @@ public class WeatherServlet extends HttpServlet implements Serializable {
 
     private static final long serialVersionUID = -6004602445517820628L;
     /** The log. */
-    private final transient Logger log = Logger
+    private static Logger log = Logger
             .getLogger(WeatherServlet.class.getName());
 
     /**

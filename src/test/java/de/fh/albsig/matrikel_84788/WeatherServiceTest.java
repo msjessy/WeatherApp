@@ -1,6 +1,6 @@
 package de.fh.albsig.matrikel_84788;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Test;
@@ -22,7 +22,7 @@ public class WeatherServiceTest {
     public void testWeatherService() {
         WeatherService ws = new WeatherService();
         try {
-            assertTrue(ws.retrieveForecast("Stuttgart") != null);
+        	assertEquals(true, ws.retrieveForecast("ebingen") != null, "Weather Service does not work");
         } catch (Exception e) {
             log.warn(e.getMessage());
         }
